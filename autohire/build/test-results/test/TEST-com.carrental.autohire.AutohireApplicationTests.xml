@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.carrental.autohire.AutohireApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-07T20:30:10" hostname="DESKTOP-RAK05O4" time="0.899">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.carrental.autohire.AutohireApplicationTests" time="0.899"/>
+  <system-out><![CDATA[16:30:08.750 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.carrental.autohire.AutohireApplicationTests]: AutohireApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:30:08.844 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.carrental.autohire.AutohireApplication for test class com.carrental.autohire.AutohireApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2023-08-07T16:30:09.254-04:00  INFO 6648 --- [    Test worker] c.c.autohire.AutohireApplicationTests    : Starting AutohireApplicationTests using Java 17.0.8 with PID 6648 (started by bill_ in C:\Cre8tive\advance-java-repo v3\autohire)
+2023-08-07T16:30:09.256-04:00  INFO 6648 --- [    Test worker] c.c.autohire.AutohireApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-08-07T16:30:10.890-04:00  INFO 6648 --- [    Test worker] c.c.autohire.AutohireApplicationTests    : Started AutohireApplicationTests in 1.877 seconds (process running for 3.13)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

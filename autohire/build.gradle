@@ -1,0 +1,41 @@
+plugins { // defines the plugins applied to the project.
+	id 'java'
+	id 'org.springframework.boot' version '3.1.1'
+	id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'com.carrental.autohire' // Define a logical group or namespace for your project's artifacts.
+version = '0.0.1-SNAPSHOT' // version for this project
+
+java { // Java version to be used for source validation and compilation
+	sourceCompatibility = '17' 
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor	// Extends or inherits the dependencies of another configuration
+	}
+}
+
+repositories { // From where to obtain dependencies
+	mavenCentral()
+}
+
+dependencies { // declare the external dependencies, libraries, frameworks and plugins that your project depends on.
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.modelmapper:modelmapper:3.1.1'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+	implementation 'org.xhtmlrenderer:flying-saucer-pdf:9.1.22'
+	implementation 'com.sun.mail:jakarta.mail:2.0.1'
+	implementation 'javax.activation:activation:1.1.1'
+	implementation 'com.netflix.hystrix:hystrix-core:1.5.18'
+	// implementation 'com.zaxxer:HikariCP:4.0.3'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()	// use the junit platform for running tests
+}

@@ -28,6 +28,8 @@ CREATE TABLE `car` (
   `manufacturer` varchar(255) DEFAULT NULL,
   `model` varchar(255) DEFAULT NULL,
   `year` int(11) NOT NULL,
+  `is_booked` tinyint(1) DEFAULT 0,
+  `price` mediumtext,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -69,13 +71,13 @@ LOCK TABLES `customer` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `customer_car`
+-- Table structure for table `car_customer`
 --
 
-DROP TABLE IF EXISTS `customer_car`;
+DROP TABLE IF EXISTS `car_customer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `customer_car` (
+CREATE TABLE `car_customer` (
   `customer_id` bigint(20) NOT NULL,
   `car_id` bigint(20) NOT NULL,
   KEY `FKcj5nomddolfruitwojnlxmcjw` (`car_id`),
@@ -86,12 +88,12 @@ CREATE TABLE `customer_car` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `customer_car`
+-- Dumping data for table `car_customer`
 --
 
-LOCK TABLES `customer_car` WRITE;
-/*!40000 ALTER TABLE `customer_car` DISABLE KEYS */;
-/*!40000 ALTER TABLE `customer_car` ENABLE KEYS */;
+LOCK TABLES `car_customer` WRITE;
+/*!40000 ALTER TABLE `car_customer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `car_customer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
